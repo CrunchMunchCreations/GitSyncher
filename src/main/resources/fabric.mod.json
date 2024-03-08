@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "gitsyncher",
+    "version": "${version}",
+    "name": "GitSyncher",
+    "description": "",
+    "authors": [],
+    "contact": {
+        "repo": "https://github.com/BluSpring/GitSyncher"
+    },
+    "license": "MIT",
+    "icon": "assets/gitsyncher/icon.png",
+    "environment": "server",
+    "entrypoints": {
+        "client": [
+            "xyz.bluspring.gitsyncher.client.GitSyncherClient"
+        ],
+        "main": [
+            "xyz.bluspring.gitsyncher.GitSyncher"
+        ]
+    },
+    "mixins": [
+        "gitsyncher.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}"
+    }
+}
